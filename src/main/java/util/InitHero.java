@@ -122,7 +122,7 @@ public class InitHero {
         set.add(hero);
         hero = new Hero("探险家", 5, new String[]{"永恒之森", "耀光使"});
         set.add(hero);
-        hero = new Hero("影流之主", 5, new String[]{"天煞", "夜影"});
+        hero = new Hero("影流之镰", 5, new String[]{"天煞", "夜影"});
         set.add(hero);
         hero = new Hero("沙漠皇帝", 5, new String[]{"三国猛将", "神盾使", "枭雄"});
         set.add(hero);
@@ -256,7 +256,7 @@ public class InitHero {
         set.add(hero);
         hero = new Hero("探险家", 5, new String[]{"永恒之森", "耀光使"});
         set.add(hero);
-        hero = new Hero("影流之主", 5, new String[]{"天煞", "夜影"});
+        hero = new Hero("影流之镰", 5, new String[]{"天煞", "夜影"});
         set.add(hero);
         hero = new Hero("沙漠皇帝", 5, new String[]{"三国猛将", "神盾使", "枭雄"});
         set.add(hero);
