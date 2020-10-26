@@ -320,12 +320,14 @@ public class InitHero {
     public static void printHeroFetters(Stack<Hero> stack) {
         if (Objects.nonNull(stack)) {
             StringBuffer heroSb = new StringBuffer("英雄： ");
+            List<String> heroNameList = new ArrayList<String>();
             int fee = 0;
             Map<String, Integer> featureMap = new HashMap<String, Integer>();//羁绊详情信息
             Map<String, Integer> combineMap = new HashMap<String, Integer>();//触发的羁绊
 
             for (Hero hero : stack) {
-                heroSb.append(hero.getName() + "、");
+//                heroSb.append(hero.getName() + "、");
+                heroNameList.add(hero.getName());
                 fee += hero.getFee();
                 hero.getFeatures().forEach(feature -> {
                     if (!featureMap.containsKey(feature)) {
@@ -335,6 +337,11 @@ public class InitHero {
                     }
                 });
             }
+//            Collections.sort(heroNameList, (s1, s2) -> s1.compareTo(s2));//对英雄名称排序
+            Collections.sort(heroNameList, Comparator.naturalOrder());//对英雄名称排序
+            heroNameList.forEach(heroName -> {
+                heroSb.append(heroName + "、");
+            });
             AtomicInteger combineAmount = new AtomicInteger();//羁绊组合数量
             featureMap.forEach((k, v) -> {
                 if (HeroCombination.effect.containsKey(k) && ((v >= HeroCombination.effect.get(k).get(0) && !Objects.equals("忍者", k))

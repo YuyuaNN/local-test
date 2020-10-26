@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c08b6b81-eea6-4a97-b81b-7b278fdf7b19" name="Default Changelist" comment="" />
+    <list default="true" id="c08b6b81-eea6-4a97-b81b-7b278fdf7b19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/InitHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/InitHero.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +98,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603689947534</updated>
-      <workItem from="1603689954160" duration="1091000" />
+      <workItem from="1603689954160" duration="2885000" />
+      <workItem from="1603698023620" duration="1206000" />
     </task>
+    <task id="LOCAL-00001" summary="supply">
+      <created>1603691180109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603691180109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,10 +119,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="supply" />
+    <option name="LAST_COMMIT_MESSAGE" value="supply" />
   </component>
 </project>
