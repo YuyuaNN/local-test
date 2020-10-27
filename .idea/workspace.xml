@@ -2,18 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08b6b81-eea6-4a97-b81b-7b278fdf7b19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/InitHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/InitHero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/HeroCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HeroCombination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/HeroCombination$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/HeroCombination$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/HeroCombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/HeroCombination.class" afterDir="false" />
     </list>
+    <list id="9155785a-32a6-4c65-a519-a2865740ccf8" name="ignore" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -33,10 +45,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/util" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,6 +82,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FakerUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.FakerUtil" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HeroCombination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.HeroCombination" />
       <module name="test" />
@@ -85,9 +111,13 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HeroCombination" />
+        <item itemvalue="Application.FakerUtil" />
         <item itemvalue="Application.CombinationUtil" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,12 +125,15 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c08b6b81-eea6-4a97-b81b-7b278fdf7b19" name="Default Changelist" comment="" />
+      <changelist id="9155785a-32a6-4c65-a519-a2865740ccf8" name="ignore" comment="" />
       <created>1603689947534</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603689947534</updated>
       <workItem from="1603689954160" duration="2885000" />
       <workItem from="1603698023620" duration="4233000" />
+      <workItem from="1603703185749" duration="339000" />
+      <workItem from="1603768623622" duration="8313000" />
     </task>
     <task id="LOCAL-00001" summary="supply">
       <created>1603691180109</created>
@@ -123,7 +156,28 @@
       <option name="project" value="LOCAL" />
       <updated>1603701855971</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ignore">
+      <created>1603703317540</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603703317540</updated>
+    </task>
+    <task id="LOCAL-00005" summary="记牌器">
+      <created>1603769162253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603769162253</updated>
+    </task>
+    <task id="LOCAL-00006" summary="记牌器 添加说明">
+      <created>1603769927792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603769927792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +200,25 @@
     <MESSAGE value="supply" />
     <MESSAGE value="打印时 对英雄名称排序 优化" />
     <MESSAGE value="影流之镰 数据修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="影流之镰 数据修改" />
+    <MESSAGE value="ignore" />
+    <MESSAGE value="记牌器" />
+    <MESSAGE value="记牌器 添加说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="记牌器 添加说明" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/HeroCombination.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/HeroCombination.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

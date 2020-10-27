@@ -1,5 +1,7 @@
 package util;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -9,14 +11,66 @@ public class HeroCombination {
     public static Stack<Hero> stackCal = new Stack<Hero>();
     public static List<Set<Hero>> supSetList = new ArrayList<Set<Hero>>();//候选的英雄 数组
     public static Set<Hero> supSet = new HashSet<Hero>();
-    public static String featureName = "腥红之月";
-    public static Integer heroAmount = 8;//英雄数量
+    private static int count = 0;//组合次数
+    //查询变量
+    public static String featureName = "腥红之月";//特质名称
+    public static Integer heroAmount = 8;//英雄人口
     public static Integer amount = 6;//羁绊数量
     public static Integer combineAmount = 5;//羁绊组合数量
-    private static int count = 0;
 
     public static void main(String[] args) {
+        HeroCombination.reset();
+    }
+
+    /**
+     * 重置程序
+     * readme 输入 r 重置程序，输入，形如：腥红之月,8,6,5  执行程序
+     */
+    public static void reset() {
+        //初始化 HeroCombination 变量
+        HeroCombination.stack = new Stack<Hero>();
+        HeroCombination.effect = new HashMap<String, List<Integer>>();
+        HeroCombination.stackCal = new Stack<Hero>();
+        HeroCombination.supSetList = new ArrayList<Set<Hero>>();//候选的英雄 数组
+        HeroCombination.supSet = new HashSet<Hero>();
+        HeroCombination.count = 0;//组合次数
+
+        HeroCombination.featureName = "";//特质名称
+        HeroCombination.heroAmount = 0;//英雄人口
+        HeroCombination.amount = 0;//羁绊数量
+        HeroCombination.combineAmount = 0;//羁绊组合数量
+
+        //初始化 HeroCombination 变量
+        InitHero.combineList = new ArrayList<Map>();//最终的组合结果
+        System.out.println("====================Library reset!=====================");
+
+        System.out.println("请依次输入：特质名称,英雄人口,羁绊数量,羁绊组合数量");
+        Scanner scanner = new Scanner(System.in);
+        if (!scanner.hasNextLine()) {
+            scanner.close();
+            System.out.println("程序正常退出！");
+            return;//没有输入则 程序正常退出
+        }
+        String input = scanner.nextLine();
+        if ("r".equals(StringUtils.trim(input)) || StringUtils.isBlank(input)) {// 输入 r 重置程序
+            scanner.close();
+            System.out.println("重置程序完成！");
+            HeroCombination.reset();
+        }
+        List<String> inputList = new ArrayList<String>(Arrays.asList(StringUtils.split(input, ",")));
+        if (inputList.size() != 4) {
+            scanner.close();
+            System.out.println("输入格式不符！请重新输入，形如：腥红之月,8,6,5");
+            HeroCombination.reset();
+        }
+        HeroCombination.featureName = inputList.get(0);//特质名称
+        HeroCombination.heroAmount = Integer.valueOf(inputList.get(1));//英雄人口
+        HeroCombination.amount = Integer.valueOf(inputList.get(2));//羁绊数量
+        HeroCombination.combineAmount = Integer.valueOf(inputList.get(3));//羁绊组合数量
+        //初始化开始
         HeroCombination.init();
+        scanner.close();
+        System.out.println("====================End of execution!=====================");
     }
 
     /**
