@@ -301,8 +301,8 @@ public class InitHero {
         Map<String, Integer> filterMap = new HashMap<String, Integer>();
         if (cnt.get() >= combineAmount) {
             filterMap = map.entrySet().stream()
-                    .filter(e -> (!Objects.nonNull(fetters) || Objects.equals(e.getKey(), fetters))
-                            && (!Objects.nonNull(amount) || e.getValue() >= amount)
+                    .filter(e -> (Objects.isNull(fetters) || Objects.equals(e.getKey(), fetters))
+                            && (Objects.isNull(amount) || e.getValue() >= amount)
                     ).collect(Collectors.toMap(
                             e -> (String) e.getKey(),
                             e -> (Integer) e.getValue()

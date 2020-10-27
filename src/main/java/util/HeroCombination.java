@@ -81,7 +81,7 @@ public class HeroCombination {
         HeroCombination.effect = InitEffect.initEffect();//初始化羁绊特效
 //        Hero[] heroes = InitHero.initHero();//初始化英雄池
         Map<String, Set<Hero>> heroes = InitHero.initHero(featureName);//初始化英雄池
-        combineCal(heroes.get("sup").toArray(new Hero[0]), heroes.get("main").size() - amount, 0, 0); // 选出候选英雄
+        combineCal(heroes.get("sup").toArray(new Hero[0]), (heroAmount - amount) > 0 ? (heroAmount - amount) : 0, 0, 0); // 选出候选英雄
         Set<Hero> heroSet = null;
         for (Set<Hero> set : supSetList) {
             heroSet = new HashSet<Hero>() {{
