@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c08b6b81-eea6-4a97-b81b-7b278fdf7b19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/HeroCombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HeroCombination.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/util/HeroCombination$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/HeroCombination$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/util/HeroCombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/HeroCombination.class" afterDir="false" />
@@ -133,7 +131,7 @@
       <workItem from="1603689954160" duration="2885000" />
       <workItem from="1603698023620" duration="4233000" />
       <workItem from="1603703185749" duration="339000" />
-      <workItem from="1603768623622" duration="8313000" />
+      <workItem from="1603768623622" duration="10067000" />
     </task>
     <task id="LOCAL-00001" summary="supply">
       <created>1603691180109</created>
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603769927792</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="从控制台输入 优化">
+      <created>1603778759751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603778759751</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,22 +208,7 @@
     <MESSAGE value="ignore" />
     <MESSAGE value="记牌器" />
     <MESSAGE value="记牌器 添加说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="记牌器 添加说明" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/util/HeroCombination.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/util/HeroCombination.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="从控制台输入 优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="从控制台输入 优化" />
   </component>
 </project>

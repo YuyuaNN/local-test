@@ -62,15 +62,16 @@ public class HeroCombination {
             scanner.close();
             System.out.println("输入格式不符！请重新输入，形如：腥红之月,8,6,5");
             HeroCombination.reset();
+        } else {
+            HeroCombination.featureName = inputList.get(0);//特质名称
+            HeroCombination.heroAmount = Integer.valueOf(inputList.get(1));//英雄人口
+            HeroCombination.amount = Integer.valueOf(inputList.get(2));//羁绊数量
+            HeroCombination.combineAmount = Integer.valueOf(inputList.get(3));//羁绊组合数量
+            //初始化开始
+            HeroCombination.init();
+            scanner.close();
+            System.out.println("====================End of execution!=====================");
         }
-        HeroCombination.featureName = inputList.get(0);//特质名称
-        HeroCombination.heroAmount = Integer.valueOf(inputList.get(1));//英雄人口
-        HeroCombination.amount = Integer.valueOf(inputList.get(2));//羁绊数量
-        HeroCombination.combineAmount = Integer.valueOf(inputList.get(3));//羁绊组合数量
-        //初始化开始
-        HeroCombination.init();
-        scanner.close();
-        System.out.println("====================End of execution!=====================");
     }
 
     /**
