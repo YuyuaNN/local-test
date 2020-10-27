@@ -100,7 +100,7 @@ public class InitHero {
         set.add(hero);
         hero = new Hero("堕落天使", 4, new String[]{"玉剑仙", "耀光使"});
         set.add(hero);
-        hero = new Hero("痛苦之拥", 4, new String[]{"灵魂莲华夜幽", "秘术师"});
+        hero = new Hero("魔蛇之拥", 4, new String[]{"灵魂莲华夜幽", "秘术师"});
         set.add(hero);
         hero = new Hero("刀锋之影", 4, new String[]{"玉剑仙", "刺客"});
         set.add(hero);
@@ -234,7 +234,7 @@ public class InitHero {
         set.add(hero);
         hero = new Hero("堕落天使", 4, new String[]{"玉剑仙", "耀光使"});
         set.add(hero);
-        hero = new Hero("痛苦之拥", 4, new String[]{"灵魂莲华夜幽", "秘术师"});
+        hero = new Hero("魔蛇之拥", 4, new String[]{"灵魂莲华夜幽", "秘术师"});
         set.add(hero);
         hero = new Hero("刀锋之影", 4, new String[]{"玉剑仙", "刺客"});
         set.add(hero);
