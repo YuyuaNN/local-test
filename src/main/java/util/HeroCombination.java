@@ -92,8 +92,8 @@ public class HeroCombination {
             combine(heroeArray, heroAmount, 0, 0); // 从英雄池数组中选择N个英雄
         }
 //        List<Map> combineList = InitHero.combineList.stream().sorted(Comparator.comparingInt(s -> (Integer) s.get("combineCount"))).collect(Collectors.toList());
-        List<Map> combineList = InitHero.combineList.stream().sorted(Comparator.comparingInt(HeroCombination::comparingByCombineCount).reversed()
-                .thenComparing(HeroCombination::comparingByFee).reversed()).collect(Collectors.toList());
+        List<Map> combineList = InitHero.combineList.stream().sorted(Comparator.comparingInt(HeroCombination::comparingByCombineCount)
+                .thenComparing(HeroCombination::comparingByFee).reversed()).collect(Collectors.toList());//先根据 combineAmount 降序排序，再根据 fee 降序排序
 //        List<Map> combineList = InitHero.combineList.stream().sorted(((s1, s2) -> {
 //                    Integer combineCount = (Integer) s1.get("combineCount");
 //                    Integer combineCount2 = (Integer) s2.get("combineCount");
