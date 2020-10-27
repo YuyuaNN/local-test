@@ -7,6 +7,15 @@ import java.util.Scanner;
 
 public class FakerUtil {
     public static void main(String[] args) {
+        FakerUtil.init();
+    }
+
+    /**
+     * 执行程序入口
+     * d 和 F 表示大王， f = 小王， 1 表示 10，其它字母输入小写会自动转化成大写
+     * 输入 r 重新洗牌并且重置程序，最多输入54个数值后，程序关闭
+     */
+    public static void init() {
         System.out.println("==================================================");
         List<String> unitLib = new ArrayList<String>();
         unitLib.add("F");
@@ -90,7 +99,7 @@ public class FakerUtil {
         }
         for (int i = 10; i > 2; i--) {
             for (int j = 0; j < 4; j++) {
-                lib.add(String.valueOf(i));
+                lib.add(String.valueOf(i));//添加 3 到 10 的牌，每个牌有4张
             }
         }
         System.out.println(lib);
